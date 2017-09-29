@@ -24,7 +24,7 @@ export class AppComponent {
     this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
         switch (event.urlAfterRedirects) {
-          case '/':
+          case '/top':
             this.title.setTitle('Angular Example App');
             this.meta.updateTag({
               name: 'description',

@@ -42,13 +42,13 @@ describe('AppComponent', () => {
 
   it('should change title meta tag in root path', async(() => {
     component.router.navigate(['/']).then(() => {
-      expect(component.title.getTitle()).toBe('Angular Example App');
+      expect(component.title.getTitle()).toBe('Heroes list');
     });
   }));
 
-  it('should change title meta tag in heroes path', async(() => {
-    component.router.navigate(['/' + AppConfig.routes.heroes]).then(() => {
-      expect(component.title.getTitle()).toBe('Heroes list');
+  it('should change title meta tag in top path', async(() => {
+    component.router.navigate(['/top']).then(() => {
+      expect(component.title.getTitle()).toBe('Angular Example App');
     });
   }));
 });
